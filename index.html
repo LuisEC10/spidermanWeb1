@@ -14,7 +14,7 @@
         <a href="#">Acerca De</a>
       </div>
       <div>
-        <a href="#">Contáctame</a>
+        <a href="#contacto">Contáctame</a>
       </div>
       <div>
         <a href="#">Portafolio</a>
@@ -23,61 +23,76 @@
     <header class="title">
       <h1 class="title-h1">SPIDERMAN</h1>
     </header>
-    <div class="caracteristicas">
-      <h3 class="carac-h3">PRIMERA APARCIÓN DE SPIDERMAN</h3>
-      <p>
-        Detalle de la portada del 'Amazing Fantasy # 15', primera aparición de
-        Spiderman. El cómic Amazing Fantasy # 15 de 1962, en el que Peter Parker
-        y su alter ego Spiderman hacen su debut en las historietas, ha sido
-        vendido este jueves por tres millones de euros en la casa de subastas
-        Heritage Auctions.
-      </p>
+    <div class="cajaContenedora">
+      <div class="caracteristicas">
+        <h3 class="carac-h3">PRIMERA APARCIÓN DE SPIDERMAN</h3>
+        <p>
+          Detalle de la portada del 'Amazing Fantasy # 15', primera aparición de
+          Spiderman. El cómic Amazing Fantasy # 15 de 1962, en el que Peter Parker
+          y su alter ego Spiderman hacen su debut en las historietas, ha sido
+          vendido este jueves por tres millones de euros en la casa de subastas
+          Heritage Auctions.
+        </p>
+      </div>
+      <div class="caracteristicas">
+        <h3 class="carac-h3">PODERES DE SPIDERMAN</h3>
+        <p>
+          Fuerza, velocidad, durabilidad, agilidad, sentidos, reflejos,
+          coordinación, equilibrio y resistencia sobrehumanos. Fisiología de la
+          araña: Precognitiva capacidad de sentido arácnido, se aferra a la
+          mayoría de las superficies sólidas y la capacidad de las redes.
+        </p>
+      </div>
+    </div>  
+    <div class="cajaContenedoraImagenes">
+      <div class="caracteristicas-1">
+        <img class="imagenes" src="/images/SMH_Trailer2_53.jpg" alt="">
+      </div>
+      <div class="caracteristicas-1">
+        <img class="imagenes" src="/images/spider-man-no-way-home.jpg" alt="">
+      </div>
+      <div class="caracteristicas-1">
+        <img class="imagenes" src="/images/descarga.jpg" alt="">
+      </div>
     </div>
-    <div class="caracteristicas">
-      <h3 class="carac-h3">PODERES DE SPIDERMAN</h3>
-      <p>
-        Fuerza, velocidad, durabilidad, agilidad, sentidos, reflejos,
-        coordinación, equilibrio y resistencia sobrehumanos. Fisiología de la
-        araña: Precognitiva capacidad de sentido arácnido, se aferra a la
-        mayoría de las superficies sólidas y la capacidad de las redes.
-      </p>
-    </div>
-    <div class="box-inframe">
+      <div class="box-inframe">
       <iframe class="iframe-spiderman" name="spiderframe-1"
         >COMICS DE SPIDERMAN</iframe
       >
     </div>
     <div class="box-store">
       <a
-        href="https://tiendapanini.pe/peru/soluciones/busqueda.aspx?t=spiderman"
+        href="https://tiendapanini.pe/catalogsearch/result/?q=spiderman"
         target="spiderframe-1"
         >COMPRA COMICS DE SPIDERMAN</a
       >
     </div>
-    <div class="form-contenedor">
-      <h2>CONTACTO</h2>
-      <form id="forma" name="forma" method="post">
-        <div class="elemento">
-          <label for="nombre">Nombre: </label>
-          <input type="text" id="nombre" name="nombre" required="true" />
-        </div>
-        <div class="elemento">
-          <label for="apellido">Apellido: </label>
-          <input type="text" id="apellido" name="apellido" required="true" />
-        </div>
-        <div class="elemento">
-          <label for="email">Email: </label>
-          <input type="text" id="email" name="email" />
-        </div>
-        <div class="elemento">
-          <label for="comentario">Comentario sobre el proyecto/página: </label
-          ><br />
-          <textarea id="comentario" name="comentario"></textarea>
-        </div>
-        <div class="elemento">
-          <input type="submit" value="Enviar" />
-        </div>
-      </form>
+    <div class="fondoContacto">
+      <div class="form-contenedor">
+        <h2 id="contacto">CONTACTO</h2>
+        <form id="forma" name="forma" method="post">
+          <div class="elemento">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" required="true" />
+          </div>
+          <div class="elemento">
+            <label for="apellido">Apellido: </label>
+            <input type="text" id="apellido" name="apellido" required="true" />
+          </div>
+          <div class="elemento">
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" />
+          </div>
+          <div class="elemento">
+            <label for="comentario">Comentario sobre el proyecto/página: </label
+            ><br />
+            <textarea id="comentario" name="comentario"></textarea>
+          </div>
+          <div class="elemento">
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
