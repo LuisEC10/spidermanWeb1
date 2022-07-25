@@ -42,7 +42,7 @@ div p {
 
 @media (max-width: 425px){
     .title-h1 {
-        font-size: 4.8em;
+        font-size: 4.5em;
     }
 }
 
@@ -54,7 +54,7 @@ div p {
 
 @media (max-width: 425px) {
     div.cajaContenedora {
-        max-width: 100%;
+        max-width: 90%;
         margin: 0;
         padding: 0;
         height: 400px;
@@ -303,6 +303,7 @@ img.comic_img_3:hover {
 @media (max-width: 425px) {
     .fondoContacto {
         background-color: none;
+        width: 419px;
         height: 100%;
         padding: 0%;
     }
@@ -374,6 +375,14 @@ img.comic_img_3:hover {
     position: fixed;
 }
 
+@media (max-width: 425px) {
+    .barra_navegacion {
+        width: 419px;
+        padding: 10px 0 ;
+
+    }
+}
+
 .barra_navegacion div {
     display: inline-block;
     margin-top: 6px;
@@ -384,6 +393,16 @@ img.comic_img_3:hover {
     text-decoration: none;
     padding: 15px;
     margin-left: -10px;
+}
+
+@media (max-width: 425px) {
+    .barra_navegacion div {
+        margin-left: 20px;
+    }
+
+    .barra_navegacion a {
+        text-align: center;
+    }
 }
 
 .barra_navegacion a:hover {
