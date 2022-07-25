@@ -26,9 +26,24 @@ div p {
     border-bottom: 1px solid white;
 }
 
+@media (max-width: 425px) {
+
+    .title {
+        border-bottom: 1px solid white;
+        max-width: 420px;
+        font-size: 1em;
+        margin: 0 5px;
+    }
+}
 .title-h1 {
     font-size: 9rem;
     text-align: center;
+}
+
+@media (max-width: 425px){
+    .title-h1 {
+        font-size: 4.8em;
+    }
 }
 
 .cajaContenedora {
@@ -37,6 +52,16 @@ div p {
 
 }
 
+@media (max-width: 425px) {
+    div.cajaContenedora {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 400px;
+    }
+}
+
+
 .caracteristicas {
     border: 3px solid #950100;
     border-radius: 5px;
@@ -44,6 +69,21 @@ div p {
     margin: 0.5rem 0 0 6rem;
     width: 40%;
     display: inline-block;
+}
+
+@media (max-width: 425px) {
+    div.cajaContenedora {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    div.caracteristicas {
+        padding: 5px;
+        margin: auto;
+        width: 400px;
+        text-align: justify;
+    }   
 }
 
 .caracteristicas-1 {
@@ -64,9 +104,21 @@ div p {
     margin: 1rem 5rem 0 6.5rem;
 }
 
+@media (max-width: 425px) {
+    div.cajaContenedoraImagenes {
+        max-width: 425px;
+        height: 200px;
+        margin: 0;
+    }
+
+    img.imagenes {
+        margin: 0 0 0 17px; 
+        height: 200px;
+    }
+}
+
 .carac-h3 {
     border-bottom: 2.5px solid  #950100;
-    
 }
 
 /* <-- Cómics --> */
@@ -84,6 +136,17 @@ p.title_comic {
     padding: 5px;
     font-size: 35px;
     font-weight: 700;
+}
+
+@media (max-width: 425px) {
+    div.box-inframe {
+        margin: 10px auto;
+        height: max-content;
+    }
+
+    p.title_comic {
+        font-size: 25px;
+    }
 }
 
 div.comic_1 {
@@ -105,6 +168,20 @@ div.comic_1_p {
     padding: 15px;
 }
 
+@media (max-width: 425px) {
+    div.comic_1 {
+        display: block;
+        float: none;
+        margin: 10px 0 0 0;
+        width: 400px;
+    }
+
+    div.comic_1_p {
+        width: 85%;
+        left: 4%;
+    }
+}
+
 div.comic_2 {
     margin-top: 1rem;
     margin-left: 9.5rem;
@@ -122,6 +199,20 @@ div.comic_2_p {
     width: 70%;
     z-index: -1;
     padding: 15px;
+}
+
+@media (max-width: 425px) {
+    div.comic_2 {
+        display: block;
+        float: none;
+        margin: 10px 0 0 0;
+        width: 400px;
+    }
+
+    div.comic_2_p {
+        display: block;
+    }
+    
 }
 
 img.comic_img_2 {
@@ -165,6 +256,21 @@ div.comic_3_p {
     padding: 15px;
 }
 
+@media (max-width: 425px) {
+    div.comic_3 {
+        display: block;
+        float: none;
+        margin: 10px 0 0 0;
+        width: 400px;
+    }
+
+    div.comic_3_p {
+        display: block;
+        width: 80%;
+    }
+    
+}
+
 img.comic_img_3 {
     width: 100%;
     height: 100%;
@@ -176,36 +282,11 @@ img.comic_img_3:hover {
     opacity: 0.1;
 }
 
-.iframe-spiderman {
-    border: none;
-    width: 100%;
-    height: 100%;
-}
-
-.box-store {
-    border: 2.5px solid #eee;
-    border-radius: 4px;
-    margin: 0 auto;
-    width: fit-content;
-    margin-top: 5px;
-}
-
-.box-store a {
-    color: white;
-    display: inline-block;
-    box-sizing: content-box;
-    padding: 20px;
-    text-decoration: none;
-}
-
-.box-store a:hover {
-    background-color: #031d44;
-    color: white;
-    margin-top: 2px;
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-bottom: 1px;
-
+/* Imagenes en block max: 425px */
+@media (max-width: 425px) {
+    img.comic_img {
+        display: block;
+    }
 }
 
 /* <-- Contacto --> */
@@ -217,6 +298,15 @@ img.comic_img_3:hover {
     background-size: 100%;
     background-repeat: no-repeat;
     padding: 7.5rem 0 0 15rem;
+}
+
+@media (max-width: 425px) {
+    .fondoContacto {
+        background-color: none;
+        height: 100%;
+        padding: 0%;
+    }
+
 }
 
 .form-contenedor {
@@ -252,7 +342,7 @@ img.comic_img_3:hover {
 
 .form-contenedor .elemento input[type="submit"] {
     font-family: 'JetBrains Mono';
-    background-color: #1d3557;
+    background-color: #000814;
     border: none;
     border-radius: 10px;
     letter-spacing: 5px;
@@ -299,3 +389,4 @@ img.comic_img_3:hover {
 .barra_navegacion a:hover {
     background-color: #184e77;
 }
+
